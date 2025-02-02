@@ -1,4 +1,4 @@
-; original version of expmod
+; Original version of expmod
 (define (expmod base exp m)
   (cond ((= exp 0) 1)
         ((even? exp)
@@ -8,7 +8,7 @@
          (remainder (* base (expmod base (- exp 1) m))
                     m))))
 
-;Alyssa P. Hacker's suggested version
+; Alyssa P. Hacker's suggested version
 (define (expmod base exp m)
   (remainder (fast-expt base exp) m))
 
