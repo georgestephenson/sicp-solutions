@@ -68,23 +68,23 @@
 ;100000000019 *** .20999999999999996
 ;100000000057 *** .20999999999999996
 
-;To get an observable time difference in milliseconds on modern 2025 hardware,
+;To get an observable time difference on modern 2025 hardware,
 ;I'll compare times taken to test:
 
 ; 1. the first three primes above 1 billion
 (/ (+ 3.0000000000000006e-2 .01999999999999999 .03) 3)
 ;Value: .02666666666666666
-; 0.026ms on average
+; 0.026 seconds on average
 
 ; 2. the first three primes above 10 billion
 (/ (+ .08000000000000002 .06999999999999995 .07000000000000006) 3)
 ;Value: .07333333333333335
-; 0.073ms on average
+; 0.073 seconds on average
 
 ; 3. the first three primes above 100 billion
 (/ (+ .21000000000000008 .20999999999999996 .20999999999999996) 3)
 ;Value: .21
-; 0.21ms on average
+; 0.21 seconds on average
 
 (/ .07333333333333335 .02666666666666666)
 ;Value: 2.750000000000001

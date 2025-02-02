@@ -60,17 +60,17 @@
 ; 1. the first three primes above 1 billion
 (/ (+ .02 1.9999999999999997e-2 2.0000000000000004e-2) 3)
 ;Value: .02
-; 0.020ms on average - previously 0.026ms
+; 0.020 seconds on average - previously 0.026 seconds
 
 ; 2. the first three primes above 10 billion
 (/ (+ .04999999999999999 .04999999999999999 4.0000000000000036e-2) 3)
 ;Value: .04666666666666667
-; 0.047ms on average - previously 0.073ms
+; 0.047 seconds on average - previously 0.073 seconds
 
 ; 3. the first three primes above 100 billion
 (/ (+ .15000000000000002 .14 .14) 3)
 ;Value: .14333333333333334
-; 0.143ms on average - previously 0.21ms
+; 0.143 seconds on average - previously 0.21 seconds
 
 ;There is a noticeable improvement but it is not twice as fast.
 
