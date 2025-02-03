@@ -16,9 +16,9 @@
   (/ (* h (sum term 0 next (- n 2))) 
      3))
 
-(integral cube 0.0 1.0 100)
+(integral cube 0 1 100)
 ;Value: 1/4
-(integral cube 0.0 1.0 1000)
+(integral cube 0 1 1000)
 ;Value: 1/4
 
 (integral cube 0.0 1.0 100)
