@@ -29,8 +29,8 @@
 (cc 100 uk-coins)
 ;Value: 104561
 
-; amusingly, the British halfpenny was demontinised in 1984 so this 
-; was already out of date by the time SICP was published in 1985.
+; amusingly, the British halfpenny was demontinised in 1984 which
+; was the same year SICP was first published.
 
 (define uk-coins (list 100 50 20 10 5 2 1))
 (cc 100 uk-coins)
