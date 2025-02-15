@@ -48,4 +48,8 @@
 
 (paint (up-split wave 4))
 
+(paint (up-split einstein 4))
+
 (paint (corner-split wave 4))
+
+(paint (corner-split einstein 4))
