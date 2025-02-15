@@ -1,4 +1,4 @@
-(load "2.scm")
+(load "resources/listprocs.scm")
 
 (define (queens board-size)
   (define (queen-cols k)

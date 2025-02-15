@@ -1,6 +1,3 @@
-; standard definitions of chapter 2 procedures.
-; note: some exercises might redefine these so these aren't applicable for every exercise.
-
 ; modern mit-scheme removed nil
 (define nil '())
 
