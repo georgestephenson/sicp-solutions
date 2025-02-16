@@ -66,6 +66,9 @@
 (deriv '(* x y (+ x 3)) 'x)
 ;Value: (+ (* x y) (* y (+ x 3)))
 
-; This exercise example only gives three terms, which means a naive implementation
-; that checks if multiplicand is one term or two terms would work.
-; But the right solution requires recursion in multiplicand, it can be any number of terms.
+; EDIT: I discovered later this is better written as:
+(define (augend s)
+  (accumulate make-sum 0 (cddr s)))
+  
+(define (multiplicand p)
+  (accumulate make-product 1 (cddr p)))
