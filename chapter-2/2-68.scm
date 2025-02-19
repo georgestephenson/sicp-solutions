@@ -16,8 +16,5 @@
         ((not (memq symbol (symbols tree))) (error "symbol not in tree -- ENCODE-SYMBOL"))
         (else (next-bit symbol tree))))
 
-memq
-symbols
-
 (encode '(a d a b b c a) sample-tree)
 ;Value: (0 1 1 0 0 1 0 1 0 1 1 1 0)
