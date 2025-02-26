@@ -92,8 +92,6 @@
 
   (define (the-empty-termlist) '())
   (define (first-term term-list) 
-    (newline)
-    (display term-list)
     (apply-generic 'first-term term-list))
   (define (rest-terms term-list) 
     (apply-generic 'rest-terms term-list))
@@ -142,11 +140,6 @@
   (define (negate-terms term-list)
     (apply-generic 'negate-terms term-list))
   (define (sub-terms L1 L2)
-    (newline)
-    (display "L1 ")
-    (display L1)
-    (display " L2 ")
-    (display L2)
     (cond ((empty-termlist? L1) (negate-terms L2))
           ((empty-termlist? L2) L1)
           (else
