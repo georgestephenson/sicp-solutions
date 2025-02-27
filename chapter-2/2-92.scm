@@ -1,5 +1,5 @@
 ; I was able to muster the naive approach here by making a 2nd polynomial variable
-; the zeroeth term of the first polynomial. The would lead to a large expansion
+; the zeroeth term of the first polynomial. This will lead to a large expansion
 ; of terms in more complicated scenarios. I won't attempt to simplify terms!
 
 (load "2-87.scm")
