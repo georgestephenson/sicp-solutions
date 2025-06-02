@@ -1,0 +1,46 @@
+(define (make-table)
+  (let ((local-table (list '*table*)))
+    (define (lookup key-list)
+      (lookup-subtable key-list local-table))
+    (define (lookup-subtable key-list subtable)
+      (let ((record (assoc (car key-list) (cdr subtable))))
+        (if record
+            (if (null? (cdr key-list))
+                (cdr record)
+                (lookup-subtable (cdr key-list) record))
+            false)))
+    (define (insert! key-list value)
+      (insert-in-subtable! key-list value local-table))
+    (define (create-subtable key-list value)
+      (if (null? (cdr key-list))
+          (cons (car key-list) value)
+          (list (car key-list) (create-subtable (cdr key-list) value))))
+    (define (insert-in-subtable! key-list value subtable)
+      (let ((record (assoc (car key-list) (cdr subtable))))
+        (if record
+            (if (null? (cdr key-list))
+                (set-cdr! record value)
+                (insert-in-subtable! (cdr key-list) value record))
+            (set-cdr! subtable
+                (cons (create-subtable key-list value)
+                      (cdr subtable)))))
+      'ok)    
+    (define (dispatch m)
+      (cond ((eq? m 'lookup-proc) lookup)
+            ((eq? m 'insert-proc!) insert!)
+            (else (error "Unknown operation -- TABLE" m))))
+    dispatch))
+
+(define t1 (make-table))
+((t1 'insert-proc!) (list 'letters 'a) 5)
+((t1 'lookup-proc) (list 'letters 'a))
+;Value: 5
+((t1 'insert-proc!) (list 'vehicles 'cars 'toyota 'aygo) 123)
+((t1 'lookup-proc) (list 'vehicles 'cars 'toyota 'aygo))
+;Value: 123
+((t1 'insert-proc!) (list 'vehicles 'cars 'toyota 'celica) 876)
+((t1 'lookup-proc) (list 'vehicles 'cars 'toyota 'celica))
+;Value: 876
+((t1 'insert-proc!) (list 'vehicles 'cars 'toyota 'aygo) 456)
+((t1 'lookup-proc) (list 'vehicles 'cars 'toyota 'aygo))
+;Value: 456
