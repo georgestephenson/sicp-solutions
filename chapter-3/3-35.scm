@@ -36,7 +36,7 @@
 
 (set-value! A 2 'user)
 ;Probe: Square root = 2
-Probe: Square value = 4
+;Probe: Square value = 4
 
 (forget-value! A 'user)
 ;Probe: Square root = ?
