@@ -5,12 +5,11 @@
    (list (stream-car s) (stream-car t) (stream-car u))
    (interleave
      (interleave
-    (stream-map (lambda (x) (list (stream-car s) (stream-car t) x))
-                (stream-cdr u))
-   
-    (stream-map (lambda (x) (list (stream-car s) (car x) (cadr x)))
-                (pairs (stream-cdr s) (stream-cdr t))))
-    (triples (stream-cdr s) (stream-cdr t) (stream-cdr u)))))
+       (stream-map (lambda (x) (list (stream-car s) (stream-car t) x))
+                   (stream-cdr u))
+       (stream-map (lambda (x) (list (stream-car s) (car x) (cadr x)))
+                   (pairs (stream-cdr s) (stream-cdr t))))
+     (triples (stream-cdr s) (stream-cdr t) (stream-cdr u)))))
 
 (define (is-pythagorean triple)
   (let ((x (car triple))
