@@ -41,8 +41,6 @@
    (make-zero-crossings (stream-cdr input-stream)
                         (stream-car input-stream))))
 
-(define zero-crossings (make-zero-crossings sense-data 0))
-
 ; sense data
 
 (stream-take sense-data 12)
@@ -52,6 +50,8 @@
 ;        -.5440211108893698 -.9999902065507035 -.5365729180004349)
 
 ; original version of zero-crossings
+
+(define zero-crossings (make-zero-crossings sense-data 0))
 
 (stream-take zero-crossings 12)
 ;Value: (0 0 0 -1 0 0 1 0 0 -1 0 0)
