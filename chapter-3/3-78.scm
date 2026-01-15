@@ -30,8 +30,6 @@
          (cons (stream-car s)
                (stream-take (stream-cdr s) (- n 1))))))
 
-(define pi 3.14159265359)
-
 ; test
 
 (stream-take (solve-2nd 0 0 1 1 2) 5)
