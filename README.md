@@ -13,6 +13,6 @@ Exercises 2.44 - 2.52. I used [Racket's SICP Picture Language](https://docs.rack
 
 - [x] Chapter 1: Building Abstrations with Procedures
 - [x] Chapter 2: Building Abstractions with Data
-- [ ] Chapter 3: Modularity, Objects, and State
+- [x] Chapter 3: Modularity, Objects, and State
 - [ ] Chapter 4: Metalinguistic Abstraction
 - [ ] Chapter 5: Computing with Register Machines
