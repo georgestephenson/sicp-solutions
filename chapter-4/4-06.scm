@@ -12,6 +12,8 @@
         (list 'cons cons)
         (list 'null? null?)
         (list '+ +)
+        (list '- -)
+        (list '= =)
         ))
 
 (define the-global-environment (setup-environment))
