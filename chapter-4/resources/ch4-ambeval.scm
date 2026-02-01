@@ -292,6 +292,7 @@
         (list 'eq? eq?)
         (list 'newline newline)
         (list 'display display)
+        (list 'runtime runtime)
 ;;      more primitives
         ))
 
