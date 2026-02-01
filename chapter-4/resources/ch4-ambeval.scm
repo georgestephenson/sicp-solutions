@@ -290,6 +290,8 @@
         (list 'integer? integer?)
         (list 'sqrt sqrt)
         (list 'eq? eq?)
+        (list 'newline newline)
+        (list 'display display)
 ;;      more primitives
         ))
 
