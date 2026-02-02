@@ -293,6 +293,7 @@
         (list 'newline newline)
         (list 'display display)
         (list 'runtime runtime)
+        (list 'append append)
 ;;      more primitives
         ))
 
