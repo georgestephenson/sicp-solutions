@@ -294,7 +294,9 @@
         (list 'display display)
         (list 'runtime runtime)
         (list 'append append)
-;;      more primitives
+        (list 'list-ref list-ref)
+        (list 'random random)
+        (list 'length length)
         ))
 
 
