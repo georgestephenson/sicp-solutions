@@ -2,7 +2,7 @@
 
 (load "resources/ch4-ambeval.scm")
 
-; implement permanent-set!
+; implement if-fail
 
 (define (analyze exp)
   (cond ((self-evaluating? exp) 
