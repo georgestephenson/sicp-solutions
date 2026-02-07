@@ -81,29 +81,29 @@
 (parse '(the clever professor swiftly lectures to the student in the large class with the cat))
 ;;; Starting a new problem 
 ;;; Amb-Eval value:
-(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (verb-phrase (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (simple-noun-phrase (article the) (noun student)))) (prep-phrase (prep in) (adjective-noun-phrase (article the) (adjective large) (noun class)))) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))
+;(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (verb-phrase (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (simple-noun-phrase (article the) (noun student)))) (prep-phrase (prep in) (adjective-noun-phrase (article the) (adjective large) (noun class)))) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))
 
 ;;; Amb-Eval input:
 try-again
 ;;; Amb-Eval value:
-(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (simple-noun-phrase (article the) (noun student)))) (prep-phrase (prep in) (noun-phrase (adjective-noun-phrase (article the) (adjective large) (noun class)) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))))
+;(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (simple-noun-phrase (article the) (noun student)))) (prep-phrase (prep in) (noun-phrase (adjective-noun-phrase (article the) (adjective large) (noun class)) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))))
 
 ;;; Amb-Eval input:
 try-again
 ;;; Amb-Eval value:
-(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (noun-phrase (simple-noun-phrase (article the) (noun student)) (prep-phrase (prep in) (adjective-noun-phrase (article the) (adjective large) (noun class)))))) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))
+;(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (noun-phrase (simple-noun-phrase (article the) (noun student)) (prep-phrase (prep in) (adjective-noun-phrase (article the) (adjective large) (noun class)))))) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))
 
 ;;; Amb-Eval input:
 try-again
 ;;; Amb-Eval value:
-(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (noun-phrase (noun-phrase (simple-noun-phrase (article the) (noun student)) (prep-phrase (prep in) (adjective-noun-phrase (article the) (adjective large) (noun class)))) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))))
+;(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (noun-phrase (noun-phrase (simple-noun-phrase (article the) (noun student)) (prep-phrase (prep in) (adjective-noun-phrase (article the) (adjective large) (noun class)))) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))))
 
 ;;; Amb-Eval input:
 try-again
 ;;; Amb-Eval value:
-(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (noun-phrase (simple-noun-phrase (article the) (noun student)) (prep-phrase (prep in) (noun-phrase (adjective-noun-phrase (article the) (adjective large) (noun class)) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))))))
+;(sentence (adjective-noun-phrase (article the) (adjective clever) (noun professor)) (verb-phrase (simple-verb-phrase (adverb swiftly) (verb lectures)) (prep-phrase (prep to) (noun-phrase (simple-noun-phrase (article the) (noun student)) (prep-phrase (prep in) (noun-phrase (adjective-noun-phrase (article the) (adjective large) (noun class)) (prep-phrase (prep with) (simple-noun-phrase (article the) (noun cat)))))))))
 
 ;;; Amb-Eval input:
 try-again
 ;;; There are no more values of
-(parse (quote (the clever professor swiftly lectures to the student in the large class with the cat)))
+;(parse (quote (the clever professor swiftly lectures to the student in the large class with the cat)))
