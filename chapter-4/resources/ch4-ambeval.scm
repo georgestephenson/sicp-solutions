@@ -298,6 +298,7 @@
         (list 'random random)
         (list 'length length)
         (list 'even? even?)
+        (list 'square square)
         ))
 
 
