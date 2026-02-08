@@ -1,19 +1,17 @@
 ; exercise 4.61
 
-; setup microshaft database and query driver loop
-
 (load "resources/ch4-query.scm")
 
-(initialize-data-base microshaft-data-base)
+(define next-to-data-base
+  '(
+(rule (?x next-to ?y in (?x ?y . ?u)))
+(rule (?x next-to ?y in (?v . ?z))
+      (?x next-to ?y in ?z))
+))
+
+(initialize-data-base next-to-data-base)
 
 (query-driver-loop)
-
-(assert!
-  (rule (?x next-to ?y in (?x ?y . ?u))))
-
-(assert! 
-  (rule (?x next-to ?y in (?v . ?z))
-        (?x next-to ?y in ?z)))
 
 ;;; Query input:
 (?x next-to ?y in (1 (2 3) 4))
