@@ -1,5 +1,5 @@
 ; exercise 4.67
-; rather than describing what is required - I haven't implemented the loop detector below
+; rather than describing what is required - I have implemented the loop detector below
 
 ; setup microshaft database and query driver loop
 
