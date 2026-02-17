@@ -9,7 +9,7 @@ These are my own solutions to the computer science textbook
 - [x] Chapter 1: Building Abstrations with Procedures
 - [x] Chapter 2: Building Abstractions with Data
 - [x] Chapter 3: Modularity, Objects, and State
-- [ ] Chapter 4: Metalinguistic Abstraction
+- [x] Chapter 4: Metalinguistic Abstraction (except the final exercises 4.78 and 4.79)
 - [ ] Chapter 5: Computing with Register Machines
 
 ## Tools
