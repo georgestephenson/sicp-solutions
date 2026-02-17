@@ -74,6 +74,6 @@
 ;;; Query input:
 (grandson Methushael ?gs)
 ;;; Query results:
-(grandson methushael jubal)
-(grandson methushael jabal)
+;(grandson methushael jubal)
+;(grandson methushael jabal)
 ; it never actually terminates... but it does get the right solutions
