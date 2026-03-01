@@ -10,7 +10,7 @@ These are my own solutions to the computer science textbook
 - [x] Chapter 2: Building Abstractions with Data
 - [x] Chapter 3: Modularity, Objects, and State
 - [x] Chapter 4: Metalinguistic Abstraction (except 4.78 and 4.79)
-- [ ] Chapter 5: Computing with Register Machines (except 5.19)
+- [ ] Chapter 5: Computing with Register Machines (except 5.19, 5.25)
 
 ## Tools
 
